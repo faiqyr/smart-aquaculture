@@ -1,7 +1,80 @@
-.pio
+# ============================================================
+# SECRETS & CREDENTIALS - NEVER COMMIT THESE
+# ============================================================
+.env
+.env.*
+!.env.example
+backend/.env
+backend/firebase-admin.json
+backend/firebase-admin.json.json
+**/google-services.json
+**/GoogleService-Info.plist
+**/firebase-adminsdk-*.json
+
+# ============================================================
+# PLATFORMIO (Firmware)
+# ============================================================
+.pio/
+
+# ============================================================
+# VSCODE
+# ============================================================
 .vscode/.browse.c_cpp.db*
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
-.env
-backend/firebase-admin.json.json
+
+# ============================================================
+# NODE / FRONTEND
+# ============================================================
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+*.local
+
+# ============================================================
+# FLUTTER / MOBILE
+# ============================================================
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/android/build/
+mobile/android/.gradle/
+mobile/android/app/build/
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+mobile/.packages
+
+# ============================================================
+# GO / BACKEND
+# ============================================================
+backend/vendor/
+backend/*.exe
+backend/*.exe~
+backend/*.dll
+backend/*.so
+backend/*.dylib
+backend/tmp/
+
+# ============================================================
+# JVM CRASH LOGS (hs_err / replay logs dari Android Studio)
+# ============================================================
+hs_err_pid*.log
+replay_pid*.log
+
+# ============================================================
+# OS FILES
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# LOGS
+# ============================================================
+*.log
+logs/
